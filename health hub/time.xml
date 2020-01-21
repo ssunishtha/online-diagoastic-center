@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+
+  <Ad>
+    <ImageUrl>images\PhotoGrid_1554108563383.jpg</ImageUrl>
+    <NavigateUrl>contactus.aspx</NavigateUrl>
+    <AlternateText>Please visit http://www.Google.com</AlternateText>
+    <Impressions>10</Impressions>
+    <Keyword>Google</Keyword>
+  </Ad>
+  
+</Advertisements>

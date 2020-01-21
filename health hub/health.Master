@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="health.master.cs" Inherits="health_hub.health" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title></title>
+    <style type="text/css">
+        h1
+        {
+        background-image:url(".net3.PNG");
+        
+        width:1250px;
+        height:250px;
+        margin:0px;
+        text-align:right;
+        color:blue;
+        font-style:italic;
+        margin:0px;
+        
+        }
+    </style>
+    
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            height: 400px;
+        }
+        .style3
+        {
+            width: 269px;
+        }
+        .style4
+        {
+            width: 469px;
+            height: 250px;
+        }
+        .style5
+        {
+            color:blue;
+            font-weight:normal;
+            font-size: large;
+        }
+        .style6
+        {
+            font-weight: normal;
+            font-style: normal;
+        }
+        .style7
+        {
+            font-weight: normal;
+        }
+        .style8
+        {
+            font-style: normal;
+        }
+        .style10
+        {
+            color:blue;
+        }
+    </style>
+</head>
+
+<body background ="images/images-59.jpg" >
+
+
+    <form id="form1" runat="server">
+    <div>
+    
+    <table align="center" style="width:1024px;">
+    <tr style="height: 100px;"><td><h1>ONLINE HEALTH HUB</h1></td></tr>
+    <tr style="height:40px;"><td >
+   
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            StaticSubMenuIndent="16px" BackColor="#33CCFF" BorderColor="#000099" 
+            Font-Bold="True" BorderStyle="Solid" ForeColor="Black" Height="25px" >
+            <Items>
+                <asp:MenuItem NavigateUrl="~/home.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                <asp:MenuItem Selected="True" Text="CONTACT US" Value="CONTACT US" 
+                    NavigateUrl="~/contactus.aspx">
+                    <asp:MenuItem Text="ABOUT US" Value="ABOUT US" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="TESTS" Value="TESTS" NavigateUrl="~/test.aspx">
+                    <asp:MenuItem Text="BOOKING" Value="BOOKING" NavigateUrl="~/booking.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle Width="350px" ItemSpacing="100px" />
+        </asp:Menu>
+        <br />
+    </td></tr>
+    <tr style="vertical-align:top;"><td class="style2"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+   <table style="width:1100px;height:400px;">
+<tr>
+<td style="width:724px; font-style: italic; font-weight: 700;"><span class="style6">
+    <span class="style10">Calm mind brings inner strength and self confidence ,so thats very important
+     for good health.Good health and Good sense are two of life's greatest
+      blessings.<br />
+    <br />
+    <br />
+    </span><strong><br class="style10" />
+
+    </strong>
+    
+    <span class="style10">To enjoy good health, To bring true happiness to one's family , To bring peace to all
+     ,one must first discipline and control one's own mind<strong>.</strong></span></span><span class="style7"><br 
+        class="style10" />
+    </span>
+    <br />
+    <br />
+    
+
+    <span class="style8"><span class="style5"><strong><em>Enter into the world of care.......Enjoy visiting ......!!!!!!!!!!!!</em></strong></span></span></td>
+<td style="width:350px;">
+<table style="width:350px;"></td>
+
+</tr>
+<tr>
+<td class="style4">&nbsp;&nbsp;&nbsp;&nbsp;<br />
+    <br />
+    <br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Maroon" 
+        NavigateUrl="~/login.aspx" Target="_blank" Font-Bold="True" 
+        Font-Size="X-Large">USER LOGIN</asp:HyperLink>
+    <br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+    <br />
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+    <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Maroon" 
+        NavigateUrl="~/registration.aspx" Target="_blank" Font-Bold="True" 
+        Font-Size="X-Large">REGISTER</asp:HyperLink>
+    <br />
+    <br />
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <br />
+    <br />
+    <br />
+    &nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+</tr>
+
+<tr style="height:250px;">
+<td class="style3">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <asp:AdRotator ID="AdRotator1" runat="server" 
+         AdvertisementFile="~/hlth.xml" NavigateUrlField="" />
+  </td></tr>   </table>   </asp:ContentPlaceHolder>
+
+ </td>
+   </tr></table>
+    
+    
+ 
+    </div>
+    </form>
+</body>
+</html>
